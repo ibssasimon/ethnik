@@ -1,0 +1,6 @@
+framework module Pods_ethnik {
+  umbrella header "Pods-ethnik-umbrella.h"
+
+  export *
+  module * { export * }
+}
