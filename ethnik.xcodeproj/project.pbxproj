@@ -1,0 +1,884 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4CD878BC6C49F7869B052BD9 /* Pods_ethnik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C50C5D9CE1466676CF66C4 /* Pods_ethnik.framework */; };
+		5E9B28044D05D9A60ED10E2A /* Pods_ethnikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529A70C263B180B3A405EA14 /* Pods_ethnikTests.framework */; };
+		C23ECB383543A32DFF0F92A0 /* Pods_ethnikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAF73266CA68F0B6C9D13AB /* Pods_ethnikUITests.framework */; };
+		E813F7EF1F956E8600049276 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813F7EE1F956E8600049276 /* Map.swift */; };
+		E813F7F21F959AFC00049276 /* arrow small.png in Resources */ = {isa = PBXBuildFile; fileRef = E813F7F11F959AE700049276 /* arrow small.png */; };
+		E813F7F31F959B0000049276 /* iconmonstr-arrow-64-[Converted].png in Resources */ = {isa = PBXBuildFile; fileRef = E813F7F01F95984D00049276 /* iconmonstr-arrow-64-[Converted].png */; };
+		E813F7F51F959BEA00049276 /* magnifier-small.png in Resources */ = {isa = PBXBuildFile; fileRef = E813F7F41F959BE700049276 /* magnifier-small.png */; };
+		E813F7F71F95C5D800049276 /* restaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813F7F61F95C5D800049276 /* restaurantViewController.swift */; };
+		E813F7F91F95C6D400049276 /* jaffa.png in Resources */ = {isa = PBXBuildFile; fileRef = E813F7F81F95C6D100049276 /* jaffa.png */; };
+		E8175C7B1F945B76009FCDC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175C7A1F945B76009FCDC1 /* AppDelegate.swift */; };
+		E8175C7D1F945B76009FCDC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175C7C1F945B76009FCDC1 /* ViewController.swift */; };
+		E8175C801F945B76009FCDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8175C7E1F945B76009FCDC1 /* Main.storyboard */; };
+		E8175C821F945B76009FCDC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8175C811F945B76009FCDC1 /* Assets.xcassets */; };
+		E8175C851F945B76009FCDC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8175C831F945B76009FCDC1 /* LaunchScreen.storyboard */; };
+		E8175C901F945B76009FCDC1 /* ethnikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175C8F1F945B76009FCDC1 /* ethnikTests.swift */; };
+		E8175C9B1F945B76009FCDC1 /* ethnikUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175C9A1F945B76009FCDC1 /* ethnikUITests.swift */; };
+		E8175CA91F945DC0009FCDC1 /* Artboard 1.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CA81F945DAA009FCDC1 /* Artboard 1.png */; };
+		E8175CAB1F946234009FCDC1 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CAA1F94622D009FCDC1 /* logo.png */; };
+		E8175CAD1F946454009FCDC1 /* iconmonstr-menu-1-[Converted].png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CAC1F946451009FCDC1 /* iconmonstr-menu-1-[Converted].png */; };
+		E8175CAF1F946575009FCDC1 /* iconmonstr-magnifier-1-[Converted].png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CAE1F946545009FCDC1 /* iconmonstr-magnifier-1-[Converted].png */; };
+		E8175CB11F94702D009FCDC1 /* Artboard 1 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CB01F94702A009FCDC1 /* Artboard 1 copy.png */; };
+		E8175CB31F947275009FCDC1 /* chinese.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CB21F94725F009FCDC1 /* chinese.png */; };
+		E8175CB51F947375009FCDC1 /* mex.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CB41F947373009FCDC1 /* mex.png */; };
+		E8175CB71F94746B009FCDC1 /* it.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CB61F947465009FCDC1 /* it.png */; };
+		E8175CBC1F94778D009FCDC1 /* med.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CBB1F9476ED009FCDC1 /* med.png */; };
+		E8175CBE1F9477C2009FCDC1 /* thai.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CBD1F9477BD009FCDC1 /* thai.png */; };
+		E8175CC11F947AFA009FCDC1 /* ind.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CC01F947A92009FCDC1 /* ind.png */; };
+		E8175CC31F947BA4009FCDC1 /* viet.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CC21F947B9C009FCDC1 /* viet.png */; };
+		E8175CC51F947F68009FCDC1 /* jpn.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CBA1F94767C009FCDC1 /* jpn.png */; };
+		E8175CC61F947F6C009FCDC1 /* other.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CC41F947C6A009FCDC1 /* other.png */; };
+		E8175CC81F94832C009FCDC1 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CC71F948329009FCDC1 /* launch.png */; };
+		E8564E271FBBD77F00F7E130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E8175C8C1F945B76009FCDC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8175C6F1F945B76009FCDC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8175C761F945B76009FCDC1;
+			remoteInfo = ethnik;
+		};
+		E8175C971F945B76009FCDC1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E8175C6F1F945B76009FCDC1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E8175C761F945B76009FCDC1;
+			remoteInfo = ethnik;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		529A70C263B180B3A405EA14 /* Pods_ethnikTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethnikTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77C458CCF8789A37AA17C191 /* Pods-ethnik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethnik.release.xcconfig"; path = "Pods/Target Support Files/Pods-ethnik/Pods-ethnik.release.xcconfig"; sourceTree = "<group>"; };
+		7D10E1EE51E7C9A30289E88D /* Pods-ethnikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethnikTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ethnikTests/Pods-ethnikTests.release.xcconfig"; sourceTree = "<group>"; };
+		83B0E16A54824C296C7FB6F3 /* Pods-ethnikUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethnikUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ethnikUITests/Pods-ethnikUITests.release.xcconfig"; sourceTree = "<group>"; };
+		97CFA8ABB88FCADAEB532561 /* Pods-ethnikUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethnikUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ethnikUITests/Pods-ethnikUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FAF73266CA68F0B6C9D13AB /* Pods_ethnikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethnikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E04B36B2C0E89C8F4B9656EA /* Pods-ethnikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethnikTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ethnikTests/Pods-ethnikTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E6C50C5D9CE1466676CF66C4 /* Pods_ethnik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethnik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E813F7EE1F956E8600049276 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
+		E813F7F01F95984D00049276 /* iconmonstr-arrow-64-[Converted].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-arrow-64-[Converted].png"; sourceTree = "<group>"; };
+		E813F7F11F959AE700049276 /* arrow small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow small.png"; sourceTree = "<group>"; };
+		E813F7F41F959BE700049276 /* magnifier-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifier-small.png"; sourceTree = "<group>"; };
+		E813F7F61F95C5D800049276 /* restaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantViewController.swift; sourceTree = "<group>"; };
+		E813F7F81F95C6D100049276 /* jaffa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jaffa.png; sourceTree = "<group>"; };
+		E813F7FD1F95CFC500049276 /* ethnik.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ethnik.entitlements; sourceTree = "<group>"; };
+		E8175C771F945B76009FCDC1 /* ethnik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ethnik.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8175C7A1F945B76009FCDC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E8175C7C1F945B76009FCDC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E8175C7F1F945B76009FCDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E8175C811F945B76009FCDC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E8175C841F945B76009FCDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E8175C861F945B76009FCDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8175C8B1F945B76009FCDC1 /* ethnikTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ethnikTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8175C8F1F945B76009FCDC1 /* ethnikTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ethnikTests.swift; sourceTree = "<group>"; };
+		E8175C911F945B76009FCDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8175C961F945B76009FCDC1 /* ethnikUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ethnikUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8175C9A1F945B76009FCDC1 /* ethnikUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ethnikUITests.swift; sourceTree = "<group>"; };
+		E8175C9C1F945B76009FCDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E8175CA81F945DAA009FCDC1 /* Artboard 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 1.png"; sourceTree = "<group>"; };
+		E8175CAA1F94622D009FCDC1 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		E8175CAC1F946451009FCDC1 /* iconmonstr-menu-1-[Converted].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-menu-1-[Converted].png"; sourceTree = "<group>"; };
+		E8175CAE1F946545009FCDC1 /* iconmonstr-magnifier-1-[Converted].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-magnifier-1-[Converted].png"; sourceTree = "<group>"; };
+		E8175CB01F94702A009FCDC1 /* Artboard 1 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 1 copy.png"; sourceTree = "<group>"; };
+		E8175CB21F94725F009FCDC1 /* chinese.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = chinese.png; sourceTree = "<group>"; };
+		E8175CB41F947373009FCDC1 /* mex.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mex.png; sourceTree = "<group>"; };
+		E8175CB61F947465009FCDC1 /* it.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = it.png; sourceTree = "<group>"; };
+		E8175CBA1F94767C009FCDC1 /* jpn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jpn.png; sourceTree = "<group>"; };
+		E8175CBB1F9476ED009FCDC1 /* med.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = med.png; sourceTree = "<group>"; };
+		E8175CBD1F9477BD009FCDC1 /* thai.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = thai.png; sourceTree = "<group>"; };
+		E8175CBF1F9479BA009FCDC1 /* app icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "app icon.png"; sourceTree = "<group>"; };
+		E8175CC01F947A92009FCDC1 /* ind.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ind.png; sourceTree = "<group>"; };
+		E8175CC21F947B9C009FCDC1 /* viet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = viet.png; sourceTree = "<group>"; };
+		E8175CC41F947C6A009FCDC1 /* other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = other.png; sourceTree = "<group>"; };
+		E8175CC71F948329009FCDC1 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
+		E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EA37BEA362F6C0477DCE5BD3 /* Pods-ethnik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethnik.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ethnik/Pods-ethnik.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E8175C741F945B76009FCDC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4CD878BC6C49F7869B052BD9 /* Pods_ethnik.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8175C881F945B76009FCDC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E9B28044D05D9A60ED10E2A /* Pods_ethnikTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8175C931F945B76009FCDC1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C23ECB383543A32DFF0F92A0 /* Pods_ethnikUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8C3143FD07359A8AB4929848 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA37BEA362F6C0477DCE5BD3 /* Pods-ethnik.debug.xcconfig */,
+				77C458CCF8789A37AA17C191 /* Pods-ethnik.release.xcconfig */,
+				E04B36B2C0E89C8F4B9656EA /* Pods-ethnikTests.debug.xcconfig */,
+				7D10E1EE51E7C9A30289E88D /* Pods-ethnikTests.release.xcconfig */,
+				97CFA8ABB88FCADAEB532561 /* Pods-ethnikUITests.debug.xcconfig */,
+				83B0E16A54824C296C7FB6F3 /* Pods-ethnikUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E813F7ED1F956BBA00049276 /* png */ = {
+			isa = PBXGroup;
+			children = (
+				E813F7F11F959AE700049276 /* arrow small.png */,
+				E813F7F01F95984D00049276 /* iconmonstr-arrow-64-[Converted].png */,
+				E8175CAE1F946545009FCDC1 /* iconmonstr-magnifier-1-[Converted].png */,
+				E8175CAC1F946451009FCDC1 /* iconmonstr-menu-1-[Converted].png */,
+				E8175CAA1F94622D009FCDC1 /* logo.png */,
+				E8175CB01F94702A009FCDC1 /* Artboard 1 copy.png */,
+				E8175CB21F94725F009FCDC1 /* chinese.png */,
+				E8175CA81F945DAA009FCDC1 /* Artboard 1.png */,
+				E8175CB41F947373009FCDC1 /* mex.png */,
+				E8175CBA1F94767C009FCDC1 /* jpn.png */,
+				E8175CB61F947465009FCDC1 /* it.png */,
+				E8175CBD1F9477BD009FCDC1 /* thai.png */,
+				E8175CBB1F9476ED009FCDC1 /* med.png */,
+				E8175CC01F947A92009FCDC1 /* ind.png */,
+				E8175CC21F947B9C009FCDC1 /* viet.png */,
+				E8175CC71F948329009FCDC1 /* launch.png */,
+				E8175CC41F947C6A009FCDC1 /* other.png */,
+				E8175CBF1F9479BA009FCDC1 /* app icon.png */,
+				E813F7F41F959BE700049276 /* magnifier-small.png */,
+				E813F7F81F95C6D100049276 /* jaffa.png */,
+			);
+			path = png;
+			sourceTree = "<group>";
+		};
+		E813F7FA1F95CFB200049276 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6C50C5D9CE1466676CF66C4 /* Pods_ethnik.framework */,
+				529A70C263B180B3A405EA14 /* Pods_ethnikTests.framework */,
+				9FAF73266CA68F0B6C9D13AB /* Pods_ethnikUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E8175C6E1F945B76009FCDC1 = {
+			isa = PBXGroup;
+			children = (
+				E813F7ED1F956BBA00049276 /* png */,
+				E8175C791F945B76009FCDC1 /* ethnik */,
+				E8175C8E1F945B76009FCDC1 /* ethnikTests */,
+				E8175C991F945B76009FCDC1 /* ethnikUITests */,
+				E8175C781F945B76009FCDC1 /* Products */,
+				E813F7FA1F95CFB200049276 /* Frameworks */,
+				8C3143FD07359A8AB4929848 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		E8175C781F945B76009FCDC1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E8175C771F945B76009FCDC1 /* ethnik.app */,
+				E8175C8B1F945B76009FCDC1 /* ethnikTests.xctest */,
+				E8175C961F945B76009FCDC1 /* ethnikUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E8175C791F945B76009FCDC1 /* ethnik */ = {
+			isa = PBXGroup;
+			children = (
+				E813F7FD1F95CFC500049276 /* ethnik.entitlements */,
+				E8175C7A1F945B76009FCDC1 /* AppDelegate.swift */,
+				E8175C7C1F945B76009FCDC1 /* ViewController.swift */,
+				E8175C7E1F945B76009FCDC1 /* Main.storyboard */,
+				E813F7F61F95C5D800049276 /* restaurantViewController.swift */,
+				E813F7EE1F956E8600049276 /* Map.swift */,
+				E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */,
+				E8175C811F945B76009FCDC1 /* Assets.xcassets */,
+				E8175C831F945B76009FCDC1 /* LaunchScreen.storyboard */,
+				E8175C861F945B76009FCDC1 /* Info.plist */,
+			);
+			path = ethnik;
+			sourceTree = "<group>";
+		};
+		E8175C8E1F945B76009FCDC1 /* ethnikTests */ = {
+			isa = PBXGroup;
+			children = (
+				E8175C8F1F945B76009FCDC1 /* ethnikTests.swift */,
+				E8175C911F945B76009FCDC1 /* Info.plist */,
+			);
+			path = ethnikTests;
+			sourceTree = "<group>";
+		};
+		E8175C991F945B76009FCDC1 /* ethnikUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E8175C9A1F945B76009FCDC1 /* ethnikUITests.swift */,
+				E8175C9C1F945B76009FCDC1 /* Info.plist */,
+			);
+			path = ethnikUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E8175C761F945B76009FCDC1 /* ethnik */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8175C9F1F945B76009FCDC1 /* Build configuration list for PBXNativeTarget "ethnik" */;
+			buildPhases = (
+				5C42673105E1A415E70F8176 /* [CP] Check Pods Manifest.lock */,
+				E8175C731F945B76009FCDC1 /* Sources */,
+				E8175C741F945B76009FCDC1 /* Frameworks */,
+				E8175C751F945B76009FCDC1 /* Resources */,
+				3B3FD73D927382BDD03DA8DD /* [CP] Embed Pods Frameworks */,
+				240AB9ABE3E67D9E9AC20756 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ethnik;
+			productName = ethnik;
+			productReference = E8175C771F945B76009FCDC1 /* ethnik.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E8175C8A1F945B76009FCDC1 /* ethnikTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8175CA21F945B76009FCDC1 /* Build configuration list for PBXNativeTarget "ethnikTests" */;
+			buildPhases = (
+				84CD4AA12A77ECF5F42D7A5C /* [CP] Check Pods Manifest.lock */,
+				E8175C871F945B76009FCDC1 /* Sources */,
+				E8175C881F945B76009FCDC1 /* Frameworks */,
+				E8175C891F945B76009FCDC1 /* Resources */,
+				DCB4CD6CC0D26312C3862A01 /* [CP] Embed Pods Frameworks */,
+				B471A0B2AEEDAF35A68084ED /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8175C8D1F945B76009FCDC1 /* PBXTargetDependency */,
+			);
+			name = ethnikTests;
+			productName = ethnikTests;
+			productReference = E8175C8B1F945B76009FCDC1 /* ethnikTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E8175C951F945B76009FCDC1 /* ethnikUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E8175CA51F945B76009FCDC1 /* Build configuration list for PBXNativeTarget "ethnikUITests" */;
+			buildPhases = (
+				8A7E06F0C323E24EC2D67609 /* [CP] Check Pods Manifest.lock */,
+				E8175C921F945B76009FCDC1 /* Sources */,
+				E8175C931F945B76009FCDC1 /* Frameworks */,
+				E8175C941F945B76009FCDC1 /* Resources */,
+				3DC8019CA2B41F4D7637DF1A /* [CP] Embed Pods Frameworks */,
+				3D0E925AA6D549E47F1A24CA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E8175C981F945B76009FCDC1 /* PBXTargetDependency */,
+			);
+			name = ethnikUITests;
+			productName = ethnikUITests;
+			productReference = E8175C961F945B76009FCDC1 /* ethnikUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E8175C6F1F945B76009FCDC1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "The United Nations";
+				TargetAttributes = {
+					E8175C761F945B76009FCDC1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 0;
+							};
+						};
+					};
+					E8175C8A1F945B76009FCDC1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E8175C761F945B76009FCDC1;
+					};
+					E8175C951F945B76009FCDC1 = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E8175C761F945B76009FCDC1;
+					};
+				};
+			};
+			buildConfigurationList = E8175C721F945B76009FCDC1 /* Build configuration list for PBXProject "ethnik" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E8175C6E1F945B76009FCDC1;
+			productRefGroup = E8175C781F945B76009FCDC1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E8175C761F945B76009FCDC1 /* ethnik */,
+				E8175C8A1F945B76009FCDC1 /* ethnikTests */,
+				E8175C951F945B76009FCDC1 /* ethnikUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E8175C751F945B76009FCDC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E813F7F31F959B0000049276 /* iconmonstr-arrow-64-[Converted].png in Resources */,
+				E8175CBC1F94778D009FCDC1 /* med.png in Resources */,
+				E8175C851F945B76009FCDC1 /* LaunchScreen.storyboard in Resources */,
+				E8175CC51F947F68009FCDC1 /* jpn.png in Resources */,
+				E8175CB11F94702D009FCDC1 /* Artboard 1 copy.png in Resources */,
+				E8175CC61F947F6C009FCDC1 /* other.png in Resources */,
+				E8175CAB1F946234009FCDC1 /* logo.png in Resources */,
+				E8175CBE1F9477C2009FCDC1 /* thai.png in Resources */,
+				E813F7F21F959AFC00049276 /* arrow small.png in Resources */,
+				E8175CB31F947275009FCDC1 /* chinese.png in Resources */,
+				E8175CA91F945DC0009FCDC1 /* Artboard 1.png in Resources */,
+				E8175CAD1F946454009FCDC1 /* iconmonstr-menu-1-[Converted].png in Resources */,
+				E8175C821F945B76009FCDC1 /* Assets.xcassets in Resources */,
+				E8175CC11F947AFA009FCDC1 /* ind.png in Resources */,
+				E813F7F91F95C6D400049276 /* jaffa.png in Resources */,
+				E8175CC81F94832C009FCDC1 /* launch.png in Resources */,
+				E8175CB71F94746B009FCDC1 /* it.png in Resources */,
+				E8175CC31F947BA4009FCDC1 /* viet.png in Resources */,
+				E813F7F51F959BEA00049276 /* magnifier-small.png in Resources */,
+				E8564E271FBBD77F00F7E130 /* GoogleService-Info.plist in Resources */,
+				E8175C801F945B76009FCDC1 /* Main.storyboard in Resources */,
+				E8175CB51F947375009FCDC1 /* mex.png in Resources */,
+				E8175CAF1F946575009FCDC1 /* iconmonstr-magnifier-1-[Converted].png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8175C891F945B76009FCDC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8175C941F945B76009FCDC1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		240AB9ABE3E67D9E9AC20756 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ethnik/Pods-ethnik-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3B3FD73D927382BDD03DA8DD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ethnik/Pods-ethnik-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ethnik/Pods-ethnik-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3D0E925AA6D549E47F1A24CA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ethnikUITests/Pods-ethnikUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DC8019CA2B41F4D7637DF1A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ethnikUITests/Pods-ethnikUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C42673105E1A415E70F8176 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ethnik-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		84CD4AA12A77ECF5F42D7A5C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ethnikTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A7E06F0C323E24EC2D67609 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ethnikUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B471A0B2AEEDAF35A68084ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ethnikTests/Pods-ethnikTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCB4CD6CC0D26312C3862A01 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ethnikTests/Pods-ethnikTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E8175C731F945B76009FCDC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8175C7D1F945B76009FCDC1 /* ViewController.swift in Sources */,
+				E813F7F71F95C5D800049276 /* restaurantViewController.swift in Sources */,
+				E813F7EF1F956E8600049276 /* Map.swift in Sources */,
+				E8175C7B1F945B76009FCDC1 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8175C871F945B76009FCDC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8175C901F945B76009FCDC1 /* ethnikTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E8175C921F945B76009FCDC1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E8175C9B1F945B76009FCDC1 /* ethnikUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E8175C8D1F945B76009FCDC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8175C761F945B76009FCDC1 /* ethnik */;
+			targetProxy = E8175C8C1F945B76009FCDC1 /* PBXContainerItemProxy */;
+		};
+		E8175C981F945B76009FCDC1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E8175C761F945B76009FCDC1 /* ethnik */;
+			targetProxy = E8175C971F945B76009FCDC1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E8175C7E1F945B76009FCDC1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8175C7F1F945B76009FCDC1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E8175C831F945B76009FCDC1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E8175C841F945B76009FCDC1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E8175C9D1F945B76009FCDC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E8175C9E1F945B76009FCDC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E8175CA01F945B76009FCDC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA37BEA362F6C0477DCE5BD3 /* Pods-ethnik.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ethnik/ethnik.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T284FY9YG5;
+				INFOPLIST_FILE = ethnik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpe.calpoly.edu.ethnik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E8175CA11F945B76009FCDC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77C458CCF8789A37AA17C191 /* Pods-ethnik.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ethnik/ethnik.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = T284FY9YG5;
+				INFOPLIST_FILE = ethnik/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpe.calpoly.edu.ethnik;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E8175CA31F945B76009FCDC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E04B36B2C0E89C8F4B9656EA /* Pods-ethnikTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4C94W6577;
+				INFOPLIST_FILE = ethnikTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpe.calpoly.edu.ethnikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ethnik.app/ethnik";
+			};
+			name = Debug;
+		};
+		E8175CA41F945B76009FCDC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D10E1EE51E7C9A30289E88D /* Pods-ethnikTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4C94W6577;
+				INFOPLIST_FILE = ethnikTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpe.calpoly.edu.ethnikTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ethnik.app/ethnik";
+			};
+			name = Release;
+		};
+		E8175CA61F945B76009FCDC1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97CFA8ABB88FCADAEB532561 /* Pods-ethnikUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4C94W6577;
+				INFOPLIST_FILE = ethnikUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpe.calpoly.edu.ethnikUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ethnik;
+			};
+			name = Debug;
+		};
+		E8175CA71F945B76009FCDC1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83B0E16A54824C296C7FB6F3 /* Pods-ethnikUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = G4C94W6577;
+				INFOPLIST_FILE = ethnikUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = cpe.calpoly.edu.ethnikUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ethnik;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E8175C721F945B76009FCDC1 /* Build configuration list for PBXProject "ethnik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8175C9D1F945B76009FCDC1 /* Debug */,
+				E8175C9E1F945B76009FCDC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8175C9F1F945B76009FCDC1 /* Build configuration list for PBXNativeTarget "ethnik" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8175CA01F945B76009FCDC1 /* Debug */,
+				E8175CA11F945B76009FCDC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8175CA21F945B76009FCDC1 /* Build configuration list for PBXNativeTarget "ethnikTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8175CA31F945B76009FCDC1 /* Debug */,
+				E8175CA41F945B76009FCDC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E8175CA51F945B76009FCDC1 /* Build configuration list for PBXNativeTarget "ethnikUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E8175CA61F945B76009FCDC1 /* Debug */,
+				E8175CA71F945B76009FCDC1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E8175C6F1F945B76009FCDC1 /* Project object */;
+}
