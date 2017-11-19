@@ -15,9 +15,7 @@ import FirebaseDatabaseUI
 
 class Map: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    @IBAction func mapBackButton(_ sender: Any) {
-        performSegue(withIdentifier: "MapBack", sender: self)
-    }
+
     
     let list = ["Jaffa Cafe","Petra","Fattoush","Pita Pit"]
   
@@ -36,8 +34,7 @@ class Map: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     
     
-    @IBAction func jaffa(_ sender: Any) {
-    }
+  
     override func viewDidLoad() {
         super.viewDidLoad()
 

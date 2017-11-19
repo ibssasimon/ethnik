@@ -11,9 +11,7 @@ import Firebase
 
 class restaurantViewController: UIViewController {
 
-    @IBAction func restaurantback(_ sender: Any) {
-        performSegue(withIdentifier: "backtomap", sender: self)
-    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

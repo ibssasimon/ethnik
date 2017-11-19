@@ -16,6 +16,7 @@
 		E813F7F51F959BEA00049276 /* magnifier-small.png in Resources */ = {isa = PBXBuildFile; fileRef = E813F7F41F959BE700049276 /* magnifier-small.png */; };
 		E813F7F71F95C5D800049276 /* restaurantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813F7F61F95C5D800049276 /* restaurantViewController.swift */; };
 		E813F7F91F95C6D400049276 /* jaffa.png in Resources */ = {isa = PBXBuildFile; fileRef = E813F7F81F95C6D100049276 /* jaffa.png */; };
+		E81712ED1FC111C4002DC35D /* storyboard changelog (READ ME).rtf in Resources */ = {isa = PBXBuildFile; fileRef = E81712EC1FC111C4002DC35D /* storyboard changelog (READ ME).rtf */; };
 		E8175C7B1F945B76009FCDC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175C7A1F945B76009FCDC1 /* AppDelegate.swift */; };
 		E8175C7D1F945B76009FCDC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175C7C1F945B76009FCDC1 /* ViewController.swift */; };
 		E8175C801F945B76009FCDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8175C7E1F945B76009FCDC1 /* Main.storyboard */; };
@@ -74,6 +75,7 @@
 		E813F7F61F95C5D800049276 /* restaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantViewController.swift; sourceTree = "<group>"; };
 		E813F7F81F95C6D100049276 /* jaffa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jaffa.png; sourceTree = "<group>"; };
 		E813F7FD1F95CFC500049276 /* ethnik.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ethnik.entitlements; sourceTree = "<group>"; };
+		E81712EC1FC111C4002DC35D /* storyboard changelog (READ ME).rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = "storyboard changelog (READ ME).rtf"; sourceTree = "<group>"; };
 		E8175C771F945B76009FCDC1 /* ethnik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ethnik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8175C7A1F945B76009FCDC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8175C7C1F945B76009FCDC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -214,6 +216,7 @@
 				E813F7FD1F95CFC500049276 /* ethnik.entitlements */,
 				E8175C7A1F945B76009FCDC1 /* AppDelegate.swift */,
 				E8175C7C1F945B76009FCDC1 /* ViewController.swift */,
+				E81712EC1FC111C4002DC35D /* storyboard changelog (READ ME).rtf */,
 				E8175C7E1F945B76009FCDC1 /* Main.storyboard */,
 				E813F7F61F95C5D800049276 /* restaurantViewController.swift */,
 				E813F7EE1F956E8600049276 /* Map.swift */,
@@ -387,6 +390,7 @@
 				E8175CC31F947BA4009FCDC1 /* viet.png in Resources */,
 				E813F7F51F959BEA00049276 /* magnifier-small.png in Resources */,
 				E8564E271FBBD77F00F7E130 /* GoogleService-Info.plist in Resources */,
+				E81712ED1FC111C4002DC35D /* storyboard changelog (READ ME).rtf in Resources */,
 				E8175C801F945B76009FCDC1 /* Main.storyboard in Resources */,
 				E8175CB51F947375009FCDC1 /* mex.png in Resources */,
 				E8175CAF1F946575009FCDC1 /* iconmonstr-magnifier-1-[Converted].png in Resources */,
