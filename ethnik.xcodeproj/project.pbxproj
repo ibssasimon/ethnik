@@ -190,6 +190,7 @@
 		E8175C6E1F945B76009FCDC1 = {
 			isa = PBXGroup;
 			children = (
+				E81712EC1FC111C4002DC35D /* storyboard changelog (READ ME).rtf */,
 				E813F7ED1F956BBA00049276 /* png */,
 				E8175C791F945B76009FCDC1 /* ethnik */,
 				E8175C8E1F945B76009FCDC1 /* ethnikTests */,
@@ -216,7 +217,6 @@
 				E813F7FD1F95CFC500049276 /* ethnik.entitlements */,
 				E8175C7A1F945B76009FCDC1 /* AppDelegate.swift */,
 				E8175C7C1F945B76009FCDC1 /* ViewController.swift */,
-				E81712EC1FC111C4002DC35D /* storyboard changelog (READ ME).rtf */,
 				E8175C7E1F945B76009FCDC1 /* Main.storyboard */,
 				E813F7F61F95C5D800049276 /* restaurantViewController.swift */,
 				E813F7EE1F956E8600049276 /* Map.swift */,
