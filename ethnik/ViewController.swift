@@ -15,6 +15,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let ref = Database.database().reference()
+        
+        let child = ref.childByAutoId()
+        
+        let dataType = [
+            "Restaurant Name": "restaurant",
+            "Food Type": "food",
+            "Location": "Stub",
+            "Rating": "5"
+        
+        ] as [String: Any]
+        
+        child.setValue(dataType)
       
         // Do any additional setup after loading the view, typically from a nib.
     }

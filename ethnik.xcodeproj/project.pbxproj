@@ -71,7 +71,7 @@
 		E813F7F01F95984D00049276 /* iconmonstr-arrow-64-[Converted].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-arrow-64-[Converted].png"; sourceTree = "<group>"; };
 		E813F7F11F959AE700049276 /* arrow small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow small.png"; sourceTree = "<group>"; };
 		E813F7F41F959BE700049276 /* magnifier-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifier-small.png"; sourceTree = "<group>"; };
-		E813F7F61F95C5D800049276 /* restaurantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = restaurantViewController.swift; sourceTree = "<group>"; };
+		E813F7F61F95C5D800049276 /* restaurantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = restaurantViewController.swift; sourceTree = "<group>"; };
 		E813F7F81F95C6D100049276 /* jaffa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jaffa.png; sourceTree = "<group>"; };
 		E813F7FD1F95CFC500049276 /* ethnik.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ethnik.entitlements; sourceTree = "<group>"; };
 		E8175C771F945B76009FCDC1 /* ethnik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ethnik.app; sourceTree = BUILT_PRODUCTS_DIR; };

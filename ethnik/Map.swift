@@ -39,6 +39,8 @@ class Map: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBAction func jaffa(_ sender: Any) {
     }
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
