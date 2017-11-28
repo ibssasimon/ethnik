@@ -76,9 +76,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func medBP(_ sender: Any) {
-        performSegue(withIdentifier: "main2map", sender: self)
-    }
+  
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
