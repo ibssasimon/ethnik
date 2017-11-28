@@ -18,7 +18,6 @@
 		E813F7F91F95C6D400049276 /* jaffa.png in Resources */ = {isa = PBXBuildFile; fileRef = E813F7F81F95C6D100049276 /* jaffa.png */; };
 		E8175C7B1F945B76009FCDC1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175C7A1F945B76009FCDC1 /* AppDelegate.swift */; };
 		E8175C7D1F945B76009FCDC1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175C7C1F945B76009FCDC1 /* ViewController.swift */; };
-		E8175C801F945B76009FCDC1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8175C7E1F945B76009FCDC1 /* Main.storyboard */; };
 		E8175C821F945B76009FCDC1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E8175C811F945B76009FCDC1 /* Assets.xcassets */; };
 		E8175C851F945B76009FCDC1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8175C831F945B76009FCDC1 /* LaunchScreen.storyboard */; };
 		E8175C901F945B76009FCDC1 /* ethnikTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8175C8F1F945B76009FCDC1 /* ethnikTests.swift */; };
@@ -39,6 +38,7 @@
 		E8175CC61F947F6C009FCDC1 /* other.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CC41F947C6A009FCDC1 /* other.png */; };
 		E8175CC81F94832C009FCDC1 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CC71F948329009FCDC1 /* launch.png */; };
 		E8564E271FBBD77F00F7E130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */; };
+		E8E59C641FCE086400B7BFF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E59C631FCE086400B7BFF4 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,7 +77,6 @@
 		E8175C771F945B76009FCDC1 /* ethnik.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ethnik.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E8175C7A1F945B76009FCDC1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E8175C7C1F945B76009FCDC1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E8175C7F1F945B76009FCDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E8175C811F945B76009FCDC1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E8175C841F945B76009FCDC1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E8175C861F945B76009FCDC1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -104,6 +103,7 @@
 		E8175CC41F947C6A009FCDC1 /* other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = other.png; sourceTree = "<group>"; };
 		E8175CC71F948329009FCDC1 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E8E59C631FCE086400B7BFF4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EA37BEA362F6C0477DCE5BD3 /* Pods-ethnik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethnik.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ethnik/Pods-ethnik.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -214,7 +214,7 @@
 				E813F7FD1F95CFC500049276 /* ethnik.entitlements */,
 				E8175C7A1F945B76009FCDC1 /* AppDelegate.swift */,
 				E8175C7C1F945B76009FCDC1 /* ViewController.swift */,
-				E8175C7E1F945B76009FCDC1 /* Main.storyboard */,
+				E8E59C631FCE086400B7BFF4 /* Main.storyboard */,
 				E813F7F61F95C5D800049276 /* restaurantViewController.swift */,
 				E813F7EE1F956E8600049276 /* Map.swift */,
 				E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */,
@@ -387,8 +387,8 @@
 				E8175CC31F947BA4009FCDC1 /* viet.png in Resources */,
 				E813F7F51F959BEA00049276 /* magnifier-small.png in Resources */,
 				E8564E271FBBD77F00F7E130 /* GoogleService-Info.plist in Resources */,
-				E8175C801F945B76009FCDC1 /* Main.storyboard in Resources */,
 				E8175CB51F947375009FCDC1 /* mex.png in Resources */,
+				E8E59C641FCE086400B7BFF4 /* Main.storyboard in Resources */,
 				E8175CAF1F946575009FCDC1 /* iconmonstr-magnifier-1-[Converted].png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,14 +609,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E8175C7E1F945B76009FCDC1 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E8175C7F1F945B76009FCDC1 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E8175C831F945B76009FCDC1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -742,7 +734,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ethnik/ethnik.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T284FY9YG5;
+				DEVELOPMENT_TEAM = G4C94W6577;
 				INFOPLIST_FILE = ethnik/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cpe.calpoly.edu.ethnik;
@@ -759,7 +751,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = ethnik/ethnik.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = T284FY9YG5;
+				DEVELOPMENT_TEAM = G4C94W6577;
 				INFOPLIST_FILE = ethnik/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cpe.calpoly.edu.ethnik;
