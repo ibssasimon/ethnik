@@ -13,42 +13,65 @@ import Firebase
 import FirebaseDatabase
 import FirebaseDatabaseUI
 
-class Map: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class Map: UIViewController, UITableViewDataSource, UITableViewDelegate {
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        <#code#>
+//    }
+//
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        <#code#>
+//    }
+    
+    let ref = Database.database().reference()
+    var fbDataSource: FUITableViewDataSource?
+    
+    
     
     @IBOutlet weak var restaurantTableView: UITableView!
     
     @IBAction func mapBackButton(_ sender: Any) {
         performSegue(withIdentifier: "MapBack", sender: self)
     }
+
+
     
     let restaurantName = ["Jaffa Cafe","Petra","Fattoush","Pita Pit"]
-    
+
     let fakeDistance = ["2.0 mi", "1.9 mi", "1.2 mi", "1.3 mi"]
-  
+
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return(restaurantName.count)
     }
-    
+
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = restaurantTableView.dequeueReusableCell(withIdentifier: "cell")
         cell?.textLabel?.text = restaurantName[indexPath.row]
         cell?.detailTextLabel?.text = "\(fakeDistance[indexPath.row])"
-        
+
         return(cell)!
     }
     
     @IBOutlet weak var map: MKMapView!
     
-    
+   
   
     override func viewDidLoad() {
+//        let type = ref.child("Food Type")
+//        let query = type.queryEqual(toValue: foodTypeBP)
+//        fbDataSource = tableView.bind(to: query) {
+//        (tableView: UITableView, IndexPath: IndexPath, data: DataSnapshot) ->
+//            UITableViewCell in
+//            let cell = tableView.dequeueReusableCell(withIdentifier:"cell")
+//            cell?.textLabel?.text = restaurantName[indexPath.row]
+//            cell.detailTextLabel?.text = fakeDistance[indexPath.row]
+//        }
         
         
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        restaurantTableView.delegate = self
-        restaurantTableView.dataSource = self
+//        restaurantTableView.delegate = self
+//        restaurantTableView.dataSource = self
         
         
         let jaffa = MKPointAnnotation()

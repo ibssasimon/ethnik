@@ -39,6 +39,7 @@
 		E8175CC81F94832C009FCDC1 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CC71F948329009FCDC1 /* launch.png */; };
 		E8564E271FBBD77F00F7E130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */; };
 		E8E59C641FCE086400B7BFF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8E59C631FCE086400B7BFF4 /* Main.storyboard */; };
+		E8E59C681FCE54DE00B7BFF4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E59C671FCE54DE00B7BFF4 /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 		E8175CC71F948329009FCDC1 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E8E59C631FCE086400B7BFF4 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E8E59C671FCE54DE00B7BFF4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		EA37BEA362F6C0477DCE5BD3 /* Pods-ethnik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethnik.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ethnik/Pods-ethnik.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -217,6 +219,7 @@
 				E8E59C631FCE086400B7BFF4 /* Main.storyboard */,
 				E813F7F61F95C5D800049276 /* restaurantViewController.swift */,
 				E813F7EE1F956E8600049276 /* Map.swift */,
+				E8E59C671FCE54DE00B7BFF4 /* TableViewController.swift */,
 				E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */,
 				E8175C811F945B76009FCDC1 /* Assets.xcassets */,
 				E8175C831F945B76009FCDC1 /* LaunchScreen.storyboard */,
@@ -573,6 +576,7 @@
 				E8175C7D1F945B76009FCDC1 /* ViewController.swift in Sources */,
 				E813F7F71F95C5D800049276 /* restaurantViewController.swift in Sources */,
 				E813F7EF1F956E8600049276 /* Map.swift in Sources */,
+				E8E59C681FCE54DE00B7BFF4 /* TableViewController.swift in Sources */,
 				E8175C7B1F945B76009FCDC1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
