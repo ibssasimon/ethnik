@@ -8,13 +8,18 @@
 
 import UIKit
 import MapKit
+import Firebase
+import FirebaseDatabase
 import FirebaseDatabaseUI
 
 class TableViewController: UITableViewController, MKMapViewDelegate {
    
+    var fbDataSource : FUITableViewDataSource?
     var foodTypeBP = String()
+    let annotation = MKPointAnnotation()
     
-    var fbDataSource = FUITableViewDataSource?.self
+    @IBOutlet weak var map: MKMapView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,7 +27,7 @@ class TableViewController: UITableViewController, MKMapViewDelegate {
         let type = ref.child("Food Type")
         let query = type.queryEqual(toValue: foodTypeBP)
         
-        fbDataSource = tableView.bind (to: query) {
+        fbDataSource = tableView.bind(to: query){
             
             (tableView: UITableView, indexPath: IndexPath, data: DataSnapshot) -> UITableViewCell in
            
@@ -37,6 +42,24 @@ class TableViewController: UITableViewController, MKMapViewDelegate {
             
             return cell
         }
+        ref.observe(.childAdded) {
+            (data: DataSnapshot) in
+            let titlesnap = data.childSnapshot(forPath: "Restaurant Name")
+            let latsnap = data.childSnapshot(forPath: "Latitude")
+            let longsnap = data.childSnapshot(forPath: "Longitude")
+            
+            self.annotation.title = titlesnap.value as? String
+            self.annotation.coordinate = CLLocationCoordinate2D(latitude: (latsnap.value as? Double)!, longitude: (longsnap.value as? Double)!)
+            
+            print(titlesnap.value!)
+            print(latsnap.value!)
+            print(longsnap.value!)
+            self.map.showAnnotations ([self.annotation], animated: true)
+            
+        }
+        
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 

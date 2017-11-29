@@ -10,7 +10,6 @@
 		4CD878BC6C49F7869B052BD9 /* Pods_ethnik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C50C5D9CE1466676CF66C4 /* Pods_ethnik.framework */; };
 		5E9B28044D05D9A60ED10E2A /* Pods_ethnikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529A70C263B180B3A405EA14 /* Pods_ethnikTests.framework */; };
 		C23ECB383543A32DFF0F92A0 /* Pods_ethnikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAF73266CA68F0B6C9D13AB /* Pods_ethnikUITests.framework */; };
-		E813F7EF1F956E8600049276 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E813F7EE1F956E8600049276 /* Map.swift */; };
 		E813F7F21F959AFC00049276 /* arrow small.png in Resources */ = {isa = PBXBuildFile; fileRef = E813F7F11F959AE700049276 /* arrow small.png */; };
 		E813F7F31F959B0000049276 /* iconmonstr-arrow-64-[Converted].png in Resources */ = {isa = PBXBuildFile; fileRef = E813F7F01F95984D00049276 /* iconmonstr-arrow-64-[Converted].png */; };
 		E813F7F51F959BEA00049276 /* magnifier-small.png in Resources */ = {isa = PBXBuildFile; fileRef = E813F7F41F959BE700049276 /* magnifier-small.png */; };
@@ -68,7 +67,6 @@
 		9FAF73266CA68F0B6C9D13AB /* Pods_ethnikUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethnikUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E04B36B2C0E89C8F4B9656EA /* Pods-ethnikTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethnikTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ethnikTests/Pods-ethnikTests.debug.xcconfig"; sourceTree = "<group>"; };
 		E6C50C5D9CE1466676CF66C4 /* Pods_ethnik.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethnik.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E813F7EE1F956E8600049276 /* Map.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		E813F7F01F95984D00049276 /* iconmonstr-arrow-64-[Converted].png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-arrow-64-[Converted].png"; sourceTree = "<group>"; };
 		E813F7F11F959AE700049276 /* arrow small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "arrow small.png"; sourceTree = "<group>"; };
 		E813F7F41F959BE700049276 /* magnifier-small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "magnifier-small.png"; sourceTree = "<group>"; };
@@ -218,7 +216,6 @@
 				E8175C7C1F945B76009FCDC1 /* ViewController.swift */,
 				E8E59C631FCE086400B7BFF4 /* Main.storyboard */,
 				E813F7F61F95C5D800049276 /* restaurantViewController.swift */,
-				E813F7EE1F956E8600049276 /* Map.swift */,
 				E8E59C671FCE54DE00B7BFF4 /* TableViewController.swift */,
 				E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */,
 				E8175C811F945B76009FCDC1 /* Assets.xcassets */,
@@ -575,7 +572,6 @@
 			files = (
 				E8175C7D1F945B76009FCDC1 /* ViewController.swift in Sources */,
 				E813F7F71F95C5D800049276 /* restaurantViewController.swift in Sources */,
-				E813F7EF1F956E8600049276 /* Map.swift in Sources */,
 				E8E59C681FCE54DE00B7BFF4 /* TableViewController.swift in Sources */,
 				E8175C7B1F945B76009FCDC1 /* AppDelegate.swift in Sources */,
 			);
