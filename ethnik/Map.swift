@@ -15,35 +15,42 @@ import FirebaseDatabaseUI
 
 class Map: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    @IBOutlet weak var restaurantTableView: UITableView!
+    
     @IBAction func mapBackButton(_ sender: Any) {
         performSegue(withIdentifier: "MapBack", sender: self)
     }
     
-    let list = ["Jaffa Cafe","Petra","Fattoush","Pita Pit"]
+    let restaurantName = ["Jaffa Cafe","Petra","Fattoush","Pita Pit"]
+    
+    let fakeDistance = ["2.0 mi", "1.9 mi", "1.2 mi", "1.3 mi"]
   
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return(list.count)
+        return(restaurantName.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = UITableViewCell(style: UITableViewCellStyle.default, reuseIdentifier: "cell")
-        cell.textLabel?.text = list[indexPath.row]
+        let cell = restaurantTableView.dequeueReusableCell(withIdentifier: "cell")
+        cell?.textLabel?.text = restaurantName[indexPath.row]
+        cell?.detailTextLabel?.text = "\(fakeDistance[indexPath.row])"
         
-        return(cell)
+        return(cell)!
     }
     
     @IBOutlet weak var map: MKMapView!
     
     
-    
-    @IBAction func jaffa(_ sender: Any) {
-    }
+  
     override func viewDidLoad() {
         
         
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        restaurantTableView.delegate = self
+        restaurantTableView.dataSource = self
+        
+        
         let jaffa = MKPointAnnotation()
         jaffa.title = "Jaffa Cafe"
         jaffa.coordinate = CLLocationCoordinate2D(latitude: 35.284619, longitude: -120.65708899999998)
