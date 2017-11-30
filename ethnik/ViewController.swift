@@ -12,7 +12,7 @@ import Firebase
 // test comment for Github
 
 class ViewController: UIViewController {
-    let ref = Database.database().reference()
+    
 
     override func viewDidLoad() {
         
@@ -20,6 +20,7 @@ class ViewController: UIViewController {
 
         super.viewDidLoad()
         
+        loadIndian()
         
         
         
@@ -29,6 +30,7 @@ class ViewController: UIViewController {
     }
     
     func loadMediterranean() {
+        let ref = Database.database().reference()
         let Mediterranean = ref.child("Mediterranean")
         let jaffa = Mediterranean.child("Jaffa")
         let fattoush = Mediterranean.child("Fatoush")
@@ -80,6 +82,36 @@ class ViewController: UIViewController {
             ] as [String: Any]
         petra.setValue(petraData)
         
+    }
+    
+    func loadIndian() {
+        let ref = Database.database().reference()
+        let Indian = ref.child("Indian")
+        let tajPalace = Indian.child("Taj Palace")
+        let shalimar = Indian.child("Shalimar")
+        
+        
+        //initialization of values for restaurants
+        let tajData = [
+            "Restaurant Name": "Taj Palace",
+            "Food Type": "Indian",
+            "Longitute": "stub",
+            "Latitude": "stub",
+            "Rating": "5"
+            
+            ] as [String: Any]
+        tajPalace.setValue(tajData)
+        
+        
+        let shalimarData = [
+            "Restaurant Name": "Shalimar",
+            "Food Type": "Indian",
+            "Longitute": "Stub",
+            "Latitude": "Stub",
+            "Rating": "5"
+            
+            ] as [String: Any]
+        shalimar.setValue(shalimarData)
     }
     
   
