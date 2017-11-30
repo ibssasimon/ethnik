@@ -4,6 +4,7 @@
 //
 //  Created by James Keith Vega on 10/15/17.
 //  Copyright © 2017 The United Nations. All rights reserved.
+//  James Keith Vega, Simon Ibssa, Omar Shorab, Anira Malik
 //
 
 import UIKit
@@ -36,12 +37,16 @@ class ViewController: UIViewController {
     @IBAction func other(_ sender: Any) {
     }
     
+    
+    
+    
+    
 override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == "ChiBP" {
                 let dest = segue.destination as? Map
                 dest?.foodTypeBP = "Chinese"
             } else if segue.identifier == "MedBP" {
-        let dest = segue.destination as? Map
+                let dest = segue.destination as? Map
                 dest?.foodTypeBP = "Mediterranean"
             } else if segue.identifier == "mexBP" {
                 let dest = segue.destination as? Map
@@ -80,25 +85,23 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         }
         
 
-
         super.viewDidLoad()
         
-        loadIndian()
-        
-        
-        
-        
+        //I've created the code to add to database, just need to extract it. See below.
       
         // Do any additional setup after loading the view, typically from a nib.
     }
     
     func loadMediterranean() {
         let ref = Database.database().reference()
-        let Mediterranean = ref.child("Mediterranean")
-        let jaffa = Mediterranean.child("Jaffa")
-        let fattoush = Mediterranean.child("Fatoush")
-        let pitaPit = Mediterranean.child("PitaPit")
-        let petra = Mediterranean.child("Petra")
+        let mediterranean = ref.child("Mediterranean")
+        
+        //Initialization of Restaurants
+        let jaffa = mediterranean.child("Jaffa")
+        let fattoush = mediterranean.child("Fatoush")
+        let pitaPit = mediterranean.child("PitaPit")
+        let petra = mediterranean.child("Petra")
+        let oasis = mediterranean.child("Oasis")
         
         
         //initialization of values for restaurants
@@ -107,7 +110,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             "Food Type": "Mediterranean",
             "Longitute": "-120.65708899999998",
             "Latitude": "35.284619",
-            "Rating": "5"
+            "Rating": "4.6"
             
             ] as [String: Any]
         jaffa.setValue(jaffaData)
@@ -118,7 +121,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             "Food Type": "Mediterranean",
             "Longitute": "-120.6680136",
             "Latitude": "35.2934011",
-            "Rating": "5"
+            "Rating": "4.4"
             
             ] as [String: Any]
         fattoush.setValue(fattoushData)
@@ -129,7 +132,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             "Food Type": "Mediterranean",
             "Longitute": "-120.67058800000001",
             "Latitude": "35.2944202",
-            "Rating": "5"
+            "Rating": "3.8"
             
             ] as [String: Any]
         pitaPit.setValue(pitaData)
@@ -140,27 +143,37 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             "Food Type": "Mediterranean",
             "Longitute": "-120.65794870000002",
             "Latitude": "35.2830522",
-            "Rating": "5"
+            "Rating": "4.6"
             
             ] as [String: Any]
         petra.setValue(petraData)
+        
+        let oasisData = [
+            "Restaurant Name": "Oasis Restaurant & Catering",
+            "Food Type": "Mediterranean",
+            "Longitute": "-120.664785200",
+            "Latitude": "35.278431100",
+            "Rating": "4.3"
+            
+            ] as [String: Any]
+        oasis.setValue(oasisData)
         
     }
     
     func loadIndian() {
         let ref = Database.database().reference()
-        let Indian = ref.child("Indian")
-        let tajPalace = Indian.child("Taj Palace")
-        let shalimar = Indian.child("Shalimar")
+        let indian = ref.child("Indian")
+        let tajPalace = indian.child("Taj Palace")
+        let shalimar = indian.child("Shalimar")
         
         
         //initialization of values for restaurants
         let tajData = [
             "Restaurant Name": "Taj Palace",
             "Food Type": "Indian",
-            "Longitute": "stub",
-            "Latitude": "stub",
-            "Rating": "5"
+            "Longitute": "-120.671529500",
+            "Latitude": "35.293758700",
+            "Rating": "4.0"
             
             ] as [String: Any]
         tajPalace.setValue(tajData)
@@ -169,13 +182,194 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let shalimarData = [
             "Restaurant Name": "Shalimar",
             "Food Type": "Indian",
-            "Longitute": "Stub",
-            "Latitude": "Stub",
-            "Rating": "5"
+            "Longitute": "-120.657757100",
+            "Latitude": "35.270793100",
+            "Rating": "4.4"
             
             ] as [String: Any]
         shalimar.setValue(shalimarData)
     }
+    
+    func loadChinese() {
+        let ref = Database.database().reference()
+        let chinese = ref.child("Chinese")
+        
+        let goldenGong = chinese.child("Golden Gong Chinese Restaurant")
+        let meeHengLow = chinese.child("Mee Heng Low Noodle House")
+        
+        
+        let goldenGongData = [
+            "Restaurant Name": "Golden Gong Chinese Restaurant",
+            "Food Type": "Chinese",
+            "Longitude": "-120.678877400",
+            "Latitude": "35.262946700",
+            "Rating": "3.4"
+        
+        ] as [String: Any]
+        goldenGong.setValue(goldenGongData)
+        
+        
+        let meeHengLowData = [
+            "Restaurant Name": "Mee Heng Low Noodle House",
+            "Food Type": "Chinese",
+            "Longitude": "-120.663913200",
+            "Latitude": "35.281459100",
+            "Rating": "4.3"
+            
+            ] as [String: Any]
+        meeHengLow.setValue(meeHengLowData)
+    }
+    
+    func loadMexican() {
+        let ref = Database.database().reference()
+        let mexican = ref.child("Mexican")
+        
+        
+        let tacoDeMexico = mexican.child("Taco De Mexico")
+        let taqueriaSantaCruz = mexican.child("Taqueria Santa Cruz Express")
+        
+        
+        let tacoDeMexicoData = [
+            "Restaurant Name": "Taco De Mexico",
+            "Food Type": "Mexican",
+            "Longitude": "-120.664416100",
+            "Latitude": "35.288103600",
+            "Rating": "4.2"
+            
+            ] as [String: Any]
+        tacoDeMexico.setValue(tacoDeMexicoData)
+        
+        let taqueriaSantaCruzData = [
+            "Restaurant Name": "Taqueria Santa Cruz Express",
+            "Food Type": "Mexican",
+            "Longitude": "-120.657085900",
+            "Latitude": "35.284642100",
+            "Rating": "4.6"
+            
+            ] as [String: Any]
+        taqueriaSantaCruz.setValue(taqueriaSantaCruzData)
+        
+    }
+    
+    func loadThai() {
+        let ref = Database.database().reference()
+        let thai = ref.child("Thai")
+        
+        
+        let royalThai = thai.child("Royal Thai")
+        let thaiPalace = thai.child("Thai Palace")
+        
+        
+        let royalThaiData = [
+            "Restaurant Name": "Royal Thai",
+            "Food Type": "Thai",
+            "Longitude": "-120.671876800",
+            "Latitude": "35.292917600",
+            "Rating": "4.1"
+            
+            ] as [String: Any]
+        royalThai.setValue(royalThaiData)
+        
+        let thaiPalaceData = [
+            "Restaurant Name": "Thai Palace",
+            "Food Type": "Thai",
+            "Longitude": "-120.661843300",
+            "Latitude": "35.281202300",
+            "Rating": "4.4"
+            
+            ] as [String: Any]
+        thaiPalace.setValue(thaiPalaceData)
+    }
+    
+    func loadJapanese() {
+        let ref = Database.database().reference()
+        let japanese = ref.child("Japanese")
+        
+        
+        let goshi = japanese.child("Goshi Japanese Restaurant")
+        let hahaSushi = japanese.child("HaHa Sushi & Grill")
+        
+        
+        let goshiData = [
+            "Restaurant Name": "Goshi Japanese Restaurant",
+            "Food Type": "Japanese",
+            "Longitude": "-120.666793100",
+            "Latitude": "35.278079200",
+            "Rating": "4.7"
+            
+            ] as [String: Any]
+        goshi.setValue(goshiData)
+        
+        let hahaSushiData = [
+            "Restaurant Name": "HaHa Sushi & Grill",
+            "Food Type": "Japanese",
+            "Longitude": "-120.664568800",
+            "Latitude": "35.287073700",
+            "Rating": "4.4"
+            
+            ] as [String: Any]
+        hahaSushi.setValue(hahaSushiData)
+    }
+    
+    func loadVietnamese() {
+        let ref = Database.database().reference()
+        let vietnamese = ref.child("Vietnamese")
+        
+        let lotus = vietnamese.child("Lotus")
+        
+        
+        let lotusData = [
+            "Restaurant Name": "Lotus",
+            "Food Type": "Vietnamese",
+            "Longitude": "-120.664278000",
+            "Latitude": "35.278360800",
+            "Rating": "4.2"
+        ] as [String: Any]
+        lotus.setValue(lotusData)
+    }
+    
+    func loadItalian() {
+        let ref = Database.database().reference()
+        let italian = ref.child("Italian")
+        
+        let piemonte = italian.child("Piemonte's Italian Delicatessen")
+        let buona = italian.child("Buona Tavola")
+        
+        let piemonteData = [
+            "Restaurant Name": "Piemonte's Italian Delicatessen",
+            "Food Type": "Italian",
+            "Longitude": "-120.658286000",
+            "Latitude": "35.283862700",
+            "Rating": "4.7"
+            ] as [String: Any]
+        piemonte.setValue(piemonteData)
+        
+        let buonaData = [
+            "Restaurant Name": "Buona Tavola",
+            "Food Type": "Italian",
+            "Longitude": "-120.660490000",
+            "Latitude": "35.282073600",
+            "Rating": "4.4"
+            ] as [String: Any]
+        buona.setValue(buonaData)
+    }
+    
+    func loadOther() {
+        let ref = Database.database().reference()
+        let other = ref.child("Other")
+        
+        let jades = other.child("Jades Filipino Food")
+        
+        let jadesData = [
+            "Restaurant Name": "Jades Filipino Food",
+            "Food Type": "Other",
+            "Longitude": "-120.437265700",
+            "Latitude": "34.923223400",
+            "Rating": "4.6"
+            ] as [String: Any]
+        jades.setValue(jadesData)
+    }
+    
    
   
     override func didReceiveMemoryWarning() {
