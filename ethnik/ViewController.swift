@@ -18,12 +18,22 @@ class ViewController: UIViewController {
         
         let ref = Database.database().reference()
         
-        let Mediterranean = ref.childByAutoId()
+        let Mediterranean = ref.child("Mediterranean")
         
-        let jaffa = Mediterranean.childByAutoId()
-        let fattoush = Mediterranean.childByAutoId()
-        let pitaPit = Mediterranean.childByAutoId()
-        let petra = Mediterranean.childByAutoId()
+        loadMediterranean()
+        
+        
+        
+        
+      
+        // Do any additional setup after loading the view, typically from a nib.
+    }
+    
+    func loadMediterranean() {
+        let jaffa = Mediterranean.child("Jaffa")
+        let fattoush = Mediterranean.child("Fattoush")
+        let pitaPit = Mediterranean.child("PitaPit")
+        let petra = Mediterranean.child("Petra")
         
         
         //initialization of values for restaurants
@@ -33,8 +43,8 @@ class ViewController: UIViewController {
             "Longitute": "-120.65708899999998",
             "Latitude": "35.284619",
             "Rating": "5"
-        
-        ] as [String: Any]
+            
+            ] as [String: Any]
         jaffa.setValue(jaffaData)
         
         
@@ -70,10 +80,6 @@ class ViewController: UIViewController {
             ] as [String: Any]
         petra.setValue(petraData)
         
-        
-        
-      
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
   
