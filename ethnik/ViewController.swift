@@ -12,15 +12,14 @@ import Firebase
 // test comment for Github
 
 class ViewController: UIViewController {
+    let ref = Database.database().reference()
 
     override func viewDidLoad() {
+        
+
+
         super.viewDidLoad()
         
-        let ref = Database.database().reference()
-        
-        let Mediterranean = ref.child("Mediterranean")
-        
-        loadMediterranean()
         
         
         
@@ -30,8 +29,9 @@ class ViewController: UIViewController {
     }
     
     func loadMediterranean() {
+        let Mediterranean = ref.child("Mediterranean")
         let jaffa = Mediterranean.child("Jaffa")
-        let fattoush = Mediterranean.child("Fattoush")
+        let fattoush = Mediterranean.child("Fatoush")
         let pitaPit = Mediterranean.child("PitaPit")
         let petra = Mediterranean.child("Petra")
         
@@ -81,7 +81,7 @@ class ViewController: UIViewController {
         petra.setValue(petraData)
         
     }
-
+    
   
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
