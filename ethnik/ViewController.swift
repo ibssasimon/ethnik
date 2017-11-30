@@ -46,7 +46,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
                 let dest = segue.destination as? Map
                 dest?.foodTypeBP = "Chinese"
             } else if segue.identifier == "MedBP" {
-        let dest = segue.destination as? Map
+                let dest = segue.destination as? Map
                 dest?.foodTypeBP = "Mediterranean"
             } else if segue.identifier == "mexBP" {
                 let dest = segue.destination as? Map
