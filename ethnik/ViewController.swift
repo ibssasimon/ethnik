@@ -68,6 +68,16 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     }
    
     override func viewDidLoad() {
+        let ref = Database.database().reference()
+        let test = ref.observe(.childAdded) {
+            (data: DataSnapshot) in
+            print(data)
+            if data.hasChildren(){
+                let kid = data.children.allObjects.first
+                as? DataSnapshot
+            print(kid)
+        }
+        }
         
 
 
