@@ -12,20 +12,15 @@ import Firebase
 import FirebaseDatabase
 import FirebaseDatabaseUI
 
-class TableViewController: UITableViewController, MKMapViewDelegate {
+class TableViewController: UITableViewController {
    
     var fbDataSource : FUITableViewDataSource?
     var foodType = String()
-    let annotation = MKPointAnnotation()
-    
-
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let ref = Database.database().reference()
-        let type = ref.child("Food Type")
-        let query = type.queryEqual(toValue: foodType, childKey: "Food Type")
+        let query = ref.queryEqual(toValue: foodType, childKey: "Food Type")
         
         fbDataSource = tableView.bind(to: query){
             
@@ -36,9 +31,9 @@ class TableViewController: UITableViewController, MKMapViewDelegate {
             let nameSnap = data.childSnapshot(forPath: "Restaurant Name")
             cell.textLabel?.text = nameSnap.value as? String
             
-            let distDesc = data.childSnapshot(forPath: "distance")
-            let distValue = distDesc.value as? NSNumber
-            cell.detailTextLabel?.text = "\(distValue!)"
+            let rateDesc = data.childSnapshot(forPath: "Rating")
+            let rateValue = rateDesc.value as? NSNumber
+            cell.detailTextLabel?.text = "\(rateValue!)"
             
             return cell
         }

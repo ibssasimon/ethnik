@@ -45,7 +45,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             if segue.identifier == "ChiBP" {
                 let dest = segue.destination as? Map
                 dest?.foodTypeBP = "Chinese"
-            } else if segue.identifier == "MedBP" {
+            } else if segue.identifier == "medBP" {
                 let dest = segue.destination as? Map
                 dest?.foodTypeBP = "Mediterranean"
             } else if segue.identifier == "mexBP" {
@@ -71,20 +71,13 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
                 dest?.foodTypeBP = "Thai"
     }
     }
+    
    
     override func viewDidLoad() {
         let ref = Database.database().reference()
         let test = ref.observe(.childAdded) {
             (data: DataSnapshot) in
-            print(data)
-            if data.hasChildren(){
-                let kid = data.children.allObjects.first
-                as? DataSnapshot
-            print(kid)
         }
-        }
-        
-
         super.viewDidLoad()
         
         //I've created the code to add to database, just need to extract it. See below.
@@ -108,9 +101,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let jaffaData = [
             "Restaurant Name": "Jaffa Cafe",
             "Food Type": "Mediterranean",
-            "Longitute": "-120.65708899999998",
-            "Latitude": "35.284619",
-            "Rating": "4.6"
+            "Longitute": -120.65708899999998,
+            "Latitude": 35.284619,
+            "Rating": 4.6
             
             ] as [String: Any]
         jaffa.setValue(jaffaData)
@@ -119,9 +112,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let fattoushData = [
             "Restaurant Name": "Fattoush",
             "Food Type": "Mediterranean",
-            "Longitute": "-120.6680136",
-            "Latitude": "35.2934011",
-            "Rating": "4.4"
+            "Longitute": -120.6680136,
+            "Latitude": 35.2934011,
+            "Rating": 4.4
             
             ] as [String: Any]
         fattoush.setValue(fattoushData)
@@ -130,9 +123,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let pitaData = [
             "Restaurant Name": "Pita Pit",
             "Food Type": "Mediterranean",
-            "Longitute": "-120.67058800000001",
-            "Latitude": "35.2944202",
-            "Rating": "3.8"
+            "Longitute": -120.67058800000001,
+            "Latitude": 35.2944202,
+            "Rating": 3.8
             
             ] as [String: Any]
         pitaPit.setValue(pitaData)
@@ -141,9 +134,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let petraData = [
             "Restaurant Name": "Petra",
             "Food Type": "Mediterranean",
-            "Longitute": "-120.65794870000002",
-            "Latitude": "35.2830522",
-            "Rating": "4.6"
+            "Longitute": -120.65794870000002,
+            "Latitude": 35.2830522,
+            "Rating": 4.6
             
             ] as [String: Any]
         petra.setValue(petraData)
@@ -151,9 +144,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let oasisData = [
             "Restaurant Name": "Oasis Restaurant & Catering",
             "Food Type": "Mediterranean",
-            "Longitute": "-120.664785200",
-            "Latitude": "35.278431100",
-            "Rating": "4.3"
+            "Longitute": -120.664785200,
+            "Latitude": 35.278431100,
+            "Rating": 4.3
             
             ] as [String: Any]
         oasis.setValue(oasisData)
@@ -171,9 +164,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let tajData = [
             "Restaurant Name": "Taj Palace",
             "Food Type": "Indian",
-            "Longitute": "-120.671529500",
-            "Latitude": "35.293758700",
-            "Rating": "4.0"
+            "Longitute": -120.671529500,
+            "Latitude": 35.293758700,
+            "Rating": 4.0
             
             ] as [String: Any]
         tajPalace.setValue(tajData)
@@ -182,9 +175,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let shalimarData = [
             "Restaurant Name": "Shalimar",
             "Food Type": "Indian",
-            "Longitute": "-120.657757100",
-            "Latitude": "35.270793100",
-            "Rating": "4.4"
+            "Longitute": -120.657757100,
+            "Latitude": 35.270793100,
+            "Rating": 4.4
             
             ] as [String: Any]
         shalimar.setValue(shalimarData)
@@ -201,9 +194,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let goldenGongData = [
             "Restaurant Name": "Golden Gong Chinese Restaurant",
             "Food Type": "Chinese",
-            "Longitude": "-120.678877400",
-            "Latitude": "35.262946700",
-            "Rating": "3.4"
+            "Longitude": -120.678877400,
+            "Latitude": 35.262946700,
+            "Rating": 3.4
         
         ] as [String: Any]
         goldenGong.setValue(goldenGongData)
@@ -212,9 +205,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let meeHengLowData = [
             "Restaurant Name": "Mee Heng Low Noodle House",
             "Food Type": "Chinese",
-            "Longitude": "-120.663913200",
-            "Latitude": "35.281459100",
-            "Rating": "4.3"
+            "Longitude":-120.663913200,
+            "Latitude": 35.281459100,
+            "Rating": 4.3
             
             ] as [String: Any]
         meeHengLow.setValue(meeHengLowData)
@@ -232,9 +225,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let tacoDeMexicoData = [
             "Restaurant Name": "Taco De Mexico",
             "Food Type": "Mexican",
-            "Longitude": "-120.664416100",
-            "Latitude": "35.288103600",
-            "Rating": "4.2"
+            "Longitude": -120.664416100,
+            "Latitude": 35.288103600,
+            "Rating": 4.2
             
             ] as [String: Any]
         tacoDeMexico.setValue(tacoDeMexicoData)
@@ -242,9 +235,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let taqueriaSantaCruzData = [
             "Restaurant Name": "Taqueria Santa Cruz Express",
             "Food Type": "Mexican",
-            "Longitude": "-120.657085900",
-            "Latitude": "35.284642100",
-            "Rating": "4.6"
+            "Longitude": -120.657085900,
+            "Latitude": 35.284642100,
+            "Rating": 4.6
             
             ] as [String: Any]
         taqueriaSantaCruz.setValue(taqueriaSantaCruzData)
@@ -263,9 +256,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let royalThaiData = [
             "Restaurant Name": "Royal Thai",
             "Food Type": "Thai",
-            "Longitude": "-120.671876800",
-            "Latitude": "35.292917600",
-            "Rating": "4.1"
+            "Longitude": -120.671876800,
+            "Latitude": 35.292917600,
+            "Rating": 4.1
             
             ] as [String: Any]
         royalThai.setValue(royalThaiData)
@@ -273,9 +266,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let thaiPalaceData = [
             "Restaurant Name": "Thai Palace",
             "Food Type": "Thai",
-            "Longitude": "-120.661843300",
-            "Latitude": "35.281202300",
-            "Rating": "4.4"
+            "Longitude": -120.661843300,
+            "Latitude": 35.281202300,
+            "Rating": 4.4
             
             ] as [String: Any]
         thaiPalace.setValue(thaiPalaceData)
@@ -293,9 +286,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let goshiData = [
             "Restaurant Name": "Goshi Japanese Restaurant",
             "Food Type": "Japanese",
-            "Longitude": "-120.666793100",
-            "Latitude": "35.278079200",
-            "Rating": "4.7"
+            "Longitude": -120.666793100,
+            "Latitude": 35.278079200,
+            "Rating": 4.7
             
             ] as [String: Any]
         goshi.setValue(goshiData)
@@ -303,9 +296,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let hahaSushiData = [
             "Restaurant Name": "HaHa Sushi & Grill",
             "Food Type": "Japanese",
-            "Longitude": "-120.664568800",
-            "Latitude": "35.287073700",
-            "Rating": "4.4"
+            "Longitude": -120.664568800,
+            "Latitude": 35.287073700,
+            "Rating": 4.4
             
             ] as [String: Any]
         hahaSushi.setValue(hahaSushiData)
@@ -321,9 +314,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let lotusData = [
             "Restaurant Name": "Lotus",
             "Food Type": "Vietnamese",
-            "Longitude": "-120.664278000",
-            "Latitude": "35.278360800",
-            "Rating": "4.2"
+            "Longitude": -120.664278000,
+            "Latitude": 35.278360800,
+            "Rating": 4.2
         ] as [String: Any]
         lotus.setValue(lotusData)
     }
@@ -338,18 +331,18 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let piemonteData = [
             "Restaurant Name": "Piemonte's Italian Delicatessen",
             "Food Type": "Italian",
-            "Longitude": "-120.658286000",
-            "Latitude": "35.283862700",
-            "Rating": "4.7"
+            "Longitude": -120.658286000,
+            "Latitude": 35.283862700,
+            "Rating": 4.7
             ] as [String: Any]
         piemonte.setValue(piemonteData)
         
         let buonaData = [
             "Restaurant Name": "Buona Tavola",
             "Food Type": "Italian",
-            "Longitude": "-120.660490000",
-            "Latitude": "35.282073600",
-            "Rating": "4.4"
+            "Longitude": -120.660490000,
+            "Latitude": 35.282073600,
+            "Rating": 4.4
             ] as [String: Any]
         buona.setValue(buonaData)
     }
@@ -363,12 +356,14 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let jadesData = [
             "Restaurant Name": "Jades Filipino Food",
             "Food Type": "Other",
-            "Longitude": "-120.437265700",
-            "Latitude": "34.923223400",
-            "Rating": "4.6"
+            "Longitude": -120.437265700,
+            "Latitude": 34.923223400,
+            "Rating": 4.6
             ] as [String: Any]
         jades.setValue(jadesData)
     }
+    
+    
     
    
   
