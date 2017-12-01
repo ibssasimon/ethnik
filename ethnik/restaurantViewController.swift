@@ -21,7 +21,6 @@ class restaurantViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         let ref = Database.database().reference()
         let lookup = ref.child(foodTypeLookup)
 
