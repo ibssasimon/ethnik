@@ -20,15 +20,16 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let ref = Database.database().reference()
-        let query = ref.queryEqual(toValue: foodType, childKey: "Food Type")
-        
-        fbDataSource = tableView.bind(to: query){
+        let typetest = ref.child(foodType)
+        let query = typetest.queryOrdered(byChild: "Rating")
+        print (query)
+        fbDataSource = tableView.bind(to:query){
             
             (tableView: UITableView, indexPath: IndexPath, data: DataSnapshot) -> UITableViewCell in
            
             let cell = tableView.dequeueReusableCell(withIdentifier: "subtitle", for: indexPath)
-            
             let nameSnap = data.childSnapshot(forPath: "Restaurant Name")
+            print (nameSnap)
             cell.textLabel?.text = nameSnap.value as? String
             
             let rateDesc = data.childSnapshot(forPath: "Rating")

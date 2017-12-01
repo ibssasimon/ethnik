@@ -39,20 +39,11 @@ class Map: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let pinType = ref.child(foodTypeBP)
-        pinType.observe(.value) {
-            (data: DataSnapshot) in
-       print(data.value!)
-        }
-        
         pinType.observe(.childAdded) {
             (data: DataSnapshot) in
             let titlesnap = data.childSnapshot(forPath: "Restaurant Name")
             let latsnap = data.childSnapshot(forPath: "Latitude")
             let longsnap = data.childSnapshot(forPath: "Longitude")
-            
-            print(titlesnap.value!)
-            print(latsnap.value!)
-            print(longsnap.value!)
             
             self.annotation.title = titlesnap.value as? String
             self.annotation.coordinate = CLLocationCoordinate2D(latitude: (latsnap.value as? Double)!, longitude: (longsnap.value as? Double)!)
