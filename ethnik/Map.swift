@@ -21,9 +21,7 @@ class Map: UIViewController {
     let annotation = MKPointAnnotation()
 
     
-    @IBAction func mapBackButton(_ sender: Any) {
-        performSegue(withIdentifier: "MapBack", sender: self)
-    }
+
 
     
     @IBOutlet weak var map: MKMapView!

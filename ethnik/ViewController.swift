@@ -83,17 +83,18 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
       
         // Do any additional setup after loading the view, typically from a nib.
     }
+
     
     func loadMediterranean() {
         let ref = Database.database().reference()
         let mediterranean = ref.child("Mediterranean")
         
         //Initialization of Restaurants
-        let jaffa = mediterranean.child("Jaffa")
-        let fattoush = mediterranean.child("Fatoush")
-        let pitaPit = mediterranean.child("PitaPit")
+        let jaffa = mediterranean.child("Jaffa Cafe")
+        let fattoush = mediterranean.child("Fattoush")
+        let pitaPit = mediterranean.child("Pita Pit")
         let petra = mediterranean.child("Petra")
-        let oasis = mediterranean.child("Oasis")
+        let oasis = mediterranean.child("Oasis Restaurant & Catering")
         
         
         //initialization of values for restaurants

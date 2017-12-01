@@ -35,6 +35,8 @@ class TableViewController: UITableViewController {
             return cell
         }
         
+
+        
         
         
         
@@ -45,12 +47,15 @@ class TableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
     
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "rest" {
             let dest = segue.destination as! restaurantViewController
-            let cell = sender as! TableViewCell
-            let desc = cell.snapshot?.childSnapshot(forPath: "Mediterranean")
-            print(desc)
+            let cellPress = sender as! TableViewCell
+            let desc = cellPress.textLabel?.text!
+            dest.restaurantChosen = desc!
+            dest.typeChosen = foodType
 //            dest.restaurantChosen = (restName?.value as? String)!
         }
     }

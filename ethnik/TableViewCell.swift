@@ -12,7 +12,7 @@ import FirebaseDatabase
 class TableViewCell: UITableViewCell {
     
     @IBOutlet weak var label: UILabel!
-    var snapshot : DataSnapshot?
+    var snapshot: DataSnapshot?
 
     
     override func awakeFromNib() {
