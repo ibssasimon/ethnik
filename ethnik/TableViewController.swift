@@ -13,6 +13,7 @@ import FirebaseDatabase
 import FirebaseDatabaseUI
 
 class TableViewController: UITableViewController {
+    
    
     var fbDataSource : FUITableViewDataSource?
     var foodType = String()
@@ -25,12 +26,23 @@ class TableViewController: UITableViewController {
         fbDataSource = tableView.bind(to: query){
             (tableView: UITableView, indexPath: IndexPath, data: DataSnapshot) -> UITableViewCell in
             let cell = tableView.dequeueReusableCell(withIdentifier: "subtitle", for: indexPath)
+            
+           
             let nameSnap = data.childSnapshot(forPath: "Restaurant Name")
             cell.textLabel?.text = nameSnap.value as? String
             
             let rateDesc = data.childSnapshot(forPath: "Rating")
             let rateValue = rateDesc.value as? NSNumber
             cell.detailTextLabel?.text = "\(rateValue!)"
+            
+            
+            //Alters colors of tableView and cell
+            tableView.backgroundView = nil
+            tableView.backgroundColor = UIColor.black
+            
+            cell.backgroundView = nil
+            cell.backgroundColor = UIColor.black
+            cell.textLabel?.textColor = UIColor.white
             
             return cell
         }
