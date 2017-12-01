@@ -9,6 +9,24 @@
 
 import UIKit
 import Firebase
+extension Date {
+    func dateAt(hours: Int, minutes: Int) -> Date {
+        let calendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)!
+        var date_components = calendar.components (
+            [NSCalendar.Unit.year, NSCalendar.Unit.month,NSCalendar.Unit.day], from: self)
+        date_components.hour = hours
+        date_components.minute = minutes
+        date_components.second = 0
+        let newDate = calendar.date(from: date_components)!
+        return newDate
+    }
+}
+let now = Date()
+let five_today = now.dateAt(hours: 5, minutes: 0)
+let twelve_today = now.dateAt(hours: 12, minutes: 0)
+let six_today = now.dateAt(hours: 18, minutes: 0)
+let midnight_today = now.dateAt(hours: 0, minutes: 0)
+
 
 // test comment for Github
 
@@ -16,7 +34,9 @@ class ViewController: UIViewController {
     
 
 // action connections for buttons
-   @IBAction func chinese(_ sender: Any) {
+    @IBOutlet weak var time: UILabel!
+    
+    @IBAction func chinese(_ sender: Any) {
     }
 
     @IBAction func mexican(_ sender: Any) {
@@ -78,6 +98,17 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let test = ref.observe(.childAdded) {
             (data: DataSnapshot) in
         }
+        if now >= midnight_today &&
+            now <= twelve_today
+        {
+            time.text = "morning!"
+        } else if now >= twelve_today &&
+            now <= six_today {
+            time.text = "afternoon!"
+        } else if now >= six_today && now <= midnight_today {
+            time.text = "evening!"
+        }
+        
         super.viewDidLoad()
         //I've created the code to add to database, just need to extract it. See below.
       
