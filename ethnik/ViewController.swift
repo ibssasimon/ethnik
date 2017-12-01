@@ -79,7 +79,6 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             (data: DataSnapshot) in
         }
         super.viewDidLoad()
-        
         //I've created the code to add to database, just need to extract it. See below.
       
         // Do any additional setup after loading the view, typically from a nib.
@@ -101,7 +100,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let jaffaData = [
             "Restaurant Name": "Jaffa Cafe",
             "Food Type": "Mediterranean",
-            "Longitute": -120.65708899999998,
+            "Longitude": -120.65708899999998,
             "Latitude": 35.284619,
             "Rating": 4.6
             
@@ -112,7 +111,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let fattoushData = [
             "Restaurant Name": "Fattoush",
             "Food Type": "Mediterranean",
-            "Longitute": -120.6680136,
+            "Longitude": -120.6680136,
             "Latitude": 35.2934011,
             "Rating": 4.4
             
@@ -123,7 +122,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let pitaData = [
             "Restaurant Name": "Pita Pit",
             "Food Type": "Mediterranean",
-            "Longitute": -120.67058800000001,
+            "Longitude": -120.67058800000001,
             "Latitude": 35.2944202,
             "Rating": 3.8
             
@@ -134,7 +133,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let petraData = [
             "Restaurant Name": "Petra",
             "Food Type": "Mediterranean",
-            "Longitute": -120.65794870000002,
+            "Longitude": -120.65794870000002,
             "Latitude": 35.2830522,
             "Rating": 4.6
             
@@ -144,7 +143,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let oasisData = [
             "Restaurant Name": "Oasis Restaurant & Catering",
             "Food Type": "Mediterranean",
-            "Longitute": -120.664785200,
+            "Longitude": -120.664785200,
             "Latitude": 35.278431100,
             "Rating": 4.3
             
@@ -164,7 +163,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let tajData = [
             "Restaurant Name": "Taj Palace",
             "Food Type": "Indian",
-            "Longitute": -120.671529500,
+            "Longitude": -120.671529500,
             "Latitude": 35.293758700,
             "Rating": 4.0
             
@@ -175,7 +174,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let shalimarData = [
             "Restaurant Name": "Shalimar",
             "Food Type": "Indian",
-            "Longitute": -120.657757100,
+            "Longitude": -120.657757100,
             "Latitude": 35.270793100,
             "Rating": 4.4
             

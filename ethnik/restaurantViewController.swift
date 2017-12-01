@@ -9,8 +9,10 @@
 import UIKit
 import Firebase
 
+
+
 class restaurantViewController: UIViewController {
-    var foodTypeLookup = String()
+    var restaurantChosen = String()
     @IBOutlet weak var restName: UILabel!
     @IBOutlet weak var restCat: UILabel!
     @IBOutlet weak var restAdd1: UILabel!
@@ -18,10 +20,12 @@ class restaurantViewController: UIViewController {
     @IBOutlet weak var restHours: UILabel!
     @IBOutlet weak var restWeb: UILabel!
     @IBOutlet weak var restImage: UIImageView!
+    @IBOutlet weak var restRate: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         let ref = Database.database().reference()
+        
         
 
         // Do any additional setup after loading the view.

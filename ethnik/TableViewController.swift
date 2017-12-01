@@ -16,20 +16,16 @@ class TableViewController: UITableViewController {
    
     var fbDataSource : FUITableViewDataSource?
     var foodType = String()
-    
+     let ref = Database.database().reference()
     override func viewDidLoad() {
         super.viewDidLoad()
-        let ref = Database.database().reference()
         let typetest = ref.child(foodType)
         let query = typetest.queryOrdered(byChild: "Rating")
-        print (query)
-        fbDataSource = tableView.bind(to:query){
-            
+        
+        fbDataSource = tableView.bind(to: query){
             (tableView: UITableView, indexPath: IndexPath, data: DataSnapshot) -> UITableViewCell in
-           
             let cell = tableView.dequeueReusableCell(withIdentifier: "subtitle", for: indexPath)
             let nameSnap = data.childSnapshot(forPath: "Restaurant Name")
-            print (nameSnap)
             cell.textLabel?.text = nameSnap.value as? String
             
             let rateDesc = data.childSnapshot(forPath: "Rating")
@@ -38,21 +34,7 @@ class TableViewController: UITableViewController {
             
             return cell
         }
-//        ref.observe(.childAdded) {
-//            (data: DataSnapshot) in
-//            let titlesnap = data.childSnapshot(forPath: "Restaurant Name")
-//            let latsnap = data.childSnapshot(forPath: "Latitude")
-//            let longsnap = data.childSnapshot(forPath: "Longitude")
-//
-//            self.annotation.title = titlesnap.value as? String
-//            self.annotation.coordinate = CLLocationCoordinate2D(latitude: (latsnap.value as? Double)!, longitude: (longsnap.value as? Double)!)
-//
-//            print(titlesnap.value!)
-//            print(latsnap.value!)
-//            print(longsnap.value!)
-//            self.map.showAnnotations ([self.annotation], animated: true)
-//
-//        }
+        
         
         
         
@@ -62,6 +44,16 @@ class TableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "rest" {
+            let dest = segue.destination as! restaurantViewController
+            let cell = sender as! TableViewCell
+            let desc = cell.snapshot?.childSnapshot(forPath: "Mediterranean")
+            print(desc)
+//            dest.restaurantChosen = (restName?.value as? String)!
+        }
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -69,16 +61,15 @@ class TableViewController: UITableViewController {
     }
 
     // MARK: - Table view data source
+override func numberOfSections(in tableView: UITableView) -> Int {
+    // #warning Incomplete implementation, return the number of sections
+    return 0
+}
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
-    }
-
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
-    }
+override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    // #warning Incomplete implementation, return the number of rows
+    return 0
+}
 
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -128,11 +119,12 @@ class TableViewController: UITableViewController {
     /*
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+   
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
     }
-    */
+*/
+
 
 }

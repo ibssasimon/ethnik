@@ -37,6 +37,7 @@
 		E8175CC61F947F6C009FCDC1 /* other.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CC41F947C6A009FCDC1 /* other.png */; };
 		E8175CC81F94832C009FCDC1 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CC71F948329009FCDC1 /* launch.png */; };
 		E8564E271FBBD77F00F7E130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */; };
+		E8713C941FD0FA080052A0D8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8713C931FD0FA080052A0D8 /* TableViewCell.swift */; };
 		E8E59C681FCE54DE00B7BFF4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E59C671FCE54DE00B7BFF4 /* TableViewController.swift */; };
 		E8EB4CCA1FD0AB7200789DCC /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB4CC91FD0AB7100789DCC /* Map.swift */; };
 		E8EB4CCE1FD0B7E300789DCC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8EB4CCD1FD0B7E300789DCC /* Main.storyboard */; };
@@ -103,6 +104,7 @@
 		E8175CC41F947C6A009FCDC1 /* other.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = other.png; sourceTree = "<group>"; };
 		E8175CC71F948329009FCDC1 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		E8713C931FD0FA080052A0D8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		E8E59C671FCE54DE00B7BFF4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E8EB4CC91FD0AB7100789DCC /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		E8EB4CCD1FD0B7E300789DCC /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -220,6 +222,7 @@
 				E8E59C671FCE54DE00B7BFF4 /* TableViewController.swift */,
 				E8EB4CC91FD0AB7100789DCC /* Map.swift */,
 				E8EB4CCD1FD0B7E300789DCC /* Main.storyboard */,
+				E8713C931FD0FA080052A0D8 /* TableViewCell.swift */,
 				E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */,
 				E8175C811F945B76009FCDC1 /* Assets.xcassets */,
 				E8175C831F945B76009FCDC1 /* LaunchScreen.storyboard */,
@@ -576,6 +579,7 @@
 				E8175C7D1F945B76009FCDC1 /* ViewController.swift in Sources */,
 				E813F7F71F95C5D800049276 /* restaurantViewController.swift in Sources */,
 				E8E59C681FCE54DE00B7BFF4 /* TableViewController.swift in Sources */,
+				E8713C941FD0FA080052A0D8 /* TableViewCell.swift in Sources */,
 				E8EB4CCA1FD0AB7200789DCC /* Map.swift in Sources */,
 				E8175C7B1F945B76009FCDC1 /* AppDelegate.swift in Sources */,
 			);

@@ -44,10 +44,9 @@ class Map: UIViewController {
             let titlesnap = data.childSnapshot(forPath: "Restaurant Name")
             let latsnap = data.childSnapshot(forPath: "Latitude")
             let longsnap = data.childSnapshot(forPath: "Longitude")
-            
             self.annotation.title = titlesnap.value as? String
             self.annotation.coordinate = CLLocationCoordinate2D(latitude: (latsnap.value as? Double)!, longitude: (longsnap.value as? Double)!)
-            self.map.showAnnotations([self.annotation], animated: true)
+            self.map.showAnnotations([self.annotation,self.annotation], animated: true)
     }
     }
         
