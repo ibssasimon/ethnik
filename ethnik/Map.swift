@@ -37,14 +37,25 @@ class Map: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let pinType = ref.child(foodTypeBP)
+        
+        //Simon - Cleaned code up a little bit and let multiple pins show up
+        
         pinType.observe(.childAdded) {
             (data: DataSnapshot) in
-            let titlesnap = data.childSnapshot(forPath: "Restaurant Name")
-            let latsnap = data.childSnapshot(forPath: "Latitude")
-            let longsnap = data.childSnapshot(forPath: "Longitude")
-            self.annotation.title = titlesnap.value as? String
-            self.annotation.coordinate = CLLocationCoordinate2D(latitude: (latsnap.value as? Double)!, longitude: (longsnap.value as? Double)!)
-            self.map.showAnnotations([self.annotation,self.annotation], animated: true)
+            
+            
+            let titlesnap = data.childSnapshot(forPath: "Restaurant Name").value as? String
+            let latsnap = data.childSnapshot(forPath: "Latitude").value as? Double
+            let longsnap = data.childSnapshot(forPath: "Longitude").value as? Double
+            
+            
+            
+            let newAnnotation = MKPointAnnotation()
+            newAnnotation.title = titlesnap
+            newAnnotation.coordinate = CLLocationCoordinate2D(latitude: latsnap!, longitude: longsnap!)
+            
+            self.map.addAnnotation(newAnnotation)
+            self.map.showAnnotations(self.map.annotations, animated: true)
     }
     }
         
