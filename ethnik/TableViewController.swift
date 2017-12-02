@@ -56,7 +56,7 @@ class TableViewController: UITableViewController {
             let desc = cellPress.textLabel?.text!
             dest.restaurantChosen = desc!
             dest.typeChosen = foodType
-//            dest.restaurantChosen = (restName?.value as? String)!
+
         }
     }
 

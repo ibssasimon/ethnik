@@ -26,6 +26,7 @@ let five_today = now.dateAt(hours: 5, minutes: 0)
 let twelve_today = now.dateAt(hours: 12, minutes: 0)
 let six_today = now.dateAt(hours: 18, minutes: 0)
 let midnight_today = now.dateAt(hours: 0, minutes: 0)
+let nearmidnight_today = now.dateAt(hours:23, minutes: 59)
 
 
 // test comment for Github
@@ -94,10 +95,6 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     
    
     override func viewDidLoad() {
-        let ref = Database.database().reference()
-        let test = ref.observe(.childAdded) {
-            (data: DataSnapshot) in
-        }
         if now >= midnight_today &&
             now <= twelve_today
         {
@@ -105,7 +102,7 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         } else if now >= twelve_today &&
             now <= six_today {
             time.text = "afternoon!"
-        } else if now >= six_today && now <= midnight_today {
+        } else if now >= six_today && now <= nearmidnight_today {
             time.text = "evening!"
         }
         

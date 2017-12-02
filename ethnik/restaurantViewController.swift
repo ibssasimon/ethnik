@@ -42,7 +42,7 @@ class restaurantViewController: UIViewController {
             let websnap = data.childSnapshot(forPath: "Web")
             let phonesnap = data.childSnapshot(forPath:"Phone")
             let ratesnap = data.childSnapshot(forPath: "Rating")
-            print(data)
+           
             self.restName.text = titlesnap.value as? String
             self.restCat.text = catsnap.value as? String
             self.restRate.text = "\(ratesnap.value!)"
