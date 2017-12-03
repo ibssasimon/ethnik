@@ -13,18 +13,15 @@ import Firebase
 import FirebaseDatabase
 import FirebaseDatabaseUI
 
-class Map: UIViewController {
+class Map: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     
     let ref = Database.database().reference()
     var foodTypeBP = String()
     let annotation = MKPointAnnotation()
-
-    
-
-
-    
     @IBOutlet weak var map: MKMapView!
+    
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "tableEmbed" {
@@ -32,12 +29,13 @@ class Map: UIViewController {
             dest?.foodType = foodTypeBP
         }
     }
-  
+    
+    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         let pinType = ref.child(foodTypeBP)
-        
         //Simon - Cleaned code up a little bit and let multiple pins show up
         
         pinType.observe(.childAdded) {
@@ -58,6 +56,8 @@ class Map: UIViewController {
             self.map.showAnnotations(self.map.annotations, animated: true)
     }
     }
+    
+
         
         
     override func didReceiveMemoryWarning() {

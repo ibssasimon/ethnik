@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2636AF051FD2094300695E21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2636AF031FD2094300695E21 /* Main.storyboard */; };
 		4CD878BC6C49F7869B052BD9 /* Pods_ethnik.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6C50C5D9CE1466676CF66C4 /* Pods_ethnik.framework */; };
 		5E9B28044D05D9A60ED10E2A /* Pods_ethnikTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529A70C263B180B3A405EA14 /* Pods_ethnikTests.framework */; };
 		C23ECB383543A32DFF0F92A0 /* Pods_ethnikUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FAF73266CA68F0B6C9D13AB /* Pods_ethnikUITests.framework */; };
@@ -39,6 +38,7 @@
 		E8175CC81F94832C009FCDC1 /* launch.png in Resources */ = {isa = PBXBuildFile; fileRef = E8175CC71F948329009FCDC1 /* launch.png */; };
 		E8564E271FBBD77F00F7E130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */; };
 		E8713C941FD0FA080052A0D8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8713C931FD0FA080052A0D8 /* TableViewCell.swift */; };
+		E8713C981FD324170052A0D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8713C971FD324170052A0D8 /* Main.storyboard */; };
 		E8E59C681FCE54DE00B7BFF4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E59C671FCE54DE00B7BFF4 /* TableViewController.swift */; };
 		E8EB4CCA1FD0AB7200789DCC /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB4CC91FD0AB7100789DCC /* Map.swift */; };
 /* End PBXBuildFile section */
@@ -61,7 +61,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2636AF041FD2094300695E21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		529A70C263B180B3A405EA14 /* Pods_ethnikTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ethnikTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77C458CCF8789A37AA17C191 /* Pods-ethnik.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethnik.release.xcconfig"; path = "Pods/Target Support Files/Pods-ethnik/Pods-ethnik.release.xcconfig"; sourceTree = "<group>"; };
 		7D10E1EE51E7C9A30289E88D /* Pods-ethnikTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethnikTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ethnikTests/Pods-ethnikTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -106,6 +105,7 @@
 		E8175CC71F948329009FCDC1 /* launch.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch.png; sourceTree = "<group>"; };
 		E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E8713C931FD0FA080052A0D8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		E8713C971FD324170052A0D8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		E8E59C671FCE54DE00B7BFF4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E8EB4CC91FD0AB7100789DCC /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		EA37BEA362F6C0477DCE5BD3 /* Pods-ethnik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethnik.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ethnik/Pods-ethnik.debug.xcconfig"; sourceTree = "<group>"; };
@@ -221,7 +221,7 @@
 				E813F7F61F95C5D800049276 /* restaurantViewController.swift */,
 				E8E59C671FCE54DE00B7BFF4 /* TableViewController.swift */,
 				E8EB4CC91FD0AB7100789DCC /* Map.swift */,
-				2636AF031FD2094300695E21 /* Main.storyboard */,
+				E8713C971FD324170052A0D8 /* Main.storyboard */,
 				E8713C931FD0FA080052A0D8 /* TableViewCell.swift */,
 				E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */,
 				E8175C811F945B76009FCDC1 /* Assets.xcassets */,
@@ -376,7 +376,6 @@
 				E813F7F31F959B0000049276 /* iconmonstr-arrow-64-[Converted].png in Resources */,
 				E8175CBC1F94778D009FCDC1 /* med.png in Resources */,
 				E8175C851F945B76009FCDC1 /* LaunchScreen.storyboard in Resources */,
-				2636AF051FD2094300695E21 /* Main.storyboard in Resources */,
 				E8175CC51F947F68009FCDC1 /* jpn.png in Resources */,
 				E8175CB11F94702D009FCDC1 /* Artboard 1 copy.png in Resources */,
 				E8175CC61F947F6C009FCDC1 /* other.png in Resources */,
@@ -386,6 +385,7 @@
 				E8175CB31F947275009FCDC1 /* chinese.png in Resources */,
 				E8175CA91F945DC0009FCDC1 /* Artboard 1.png in Resources */,
 				E8175CAD1F946454009FCDC1 /* iconmonstr-menu-1-[Converted].png in Resources */,
+				E8713C981FD324170052A0D8 /* Main.storyboard in Resources */,
 				E8175C821F945B76009FCDC1 /* Assets.xcassets in Resources */,
 				E8175CC11F947AFA009FCDC1 /* ind.png in Resources */,
 				E813F7F91F95C6D400049276 /* jaffa.png in Resources */,
@@ -617,14 +617,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		2636AF031FD2094300695E21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2636AF041FD2094300695E21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E8175C831F945B76009FCDC1 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

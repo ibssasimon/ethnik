@@ -106,6 +106,9 @@ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
             time.text = "evening!"
         }
         
+        self.navigationController?.navigationBar.isTranslucent = true
+        self.navigationController?.view.backgroundColor = UIColor.clear
+        
         super.viewDidLoad()
         //I've created the code to add to database, just need to extract it. See below.
       

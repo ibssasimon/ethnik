@@ -14,7 +14,7 @@ import FirebaseDatabaseUI
 
 class TableViewController: UITableViewController {
     
-   
+    
     var fbDataSource : FUITableViewDataSource?
     var foodType = String()
      let ref = Database.database().reference()
@@ -33,17 +33,17 @@ class TableViewController: UITableViewController {
             
             let rateDesc = data.childSnapshot(forPath: "Rating")
             let rateValue = rateDesc.value as? NSNumber
-            cell.detailTextLabel?.text = "\(rateValue!)"
+            cell.detailTextLabel?.text = "\(rateValue!)/5 Stars"
+            
             
             
             //Alters colors of tableView and cell
             tableView.backgroundView = nil
-            tableView.backgroundColor = UIColor.black
+            tableView.backgroundColor = UIColor.black.withAlphaComponent(0.80)
             
             cell.backgroundView = nil
-            cell.backgroundColor = UIColor.black
+            cell.backgroundColor = UIColor.clear
             cell.textLabel?.textColor = UIColor.white
-            
             return cell
         }
         
