@@ -39,6 +39,7 @@
 		E8564E271FBBD77F00F7E130 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */; };
 		E8713C941FD0FA080052A0D8 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8713C931FD0FA080052A0D8 /* TableViewCell.swift */; };
 		E8713C981FD324170052A0D8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E8713C971FD324170052A0D8 /* Main.storyboard */; };
+		E8CE52EB1FD4EDD00051871A /* imgload.png in Resources */ = {isa = PBXBuildFile; fileRef = E8CE52EA1FD4EDD00051871A /* imgload.png */; };
 		E8E59C681FCE54DE00B7BFF4 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8E59C671FCE54DE00B7BFF4 /* TableViewController.swift */; };
 		E8EB4CCA1FD0AB7200789DCC /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8EB4CC91FD0AB7100789DCC /* Map.swift */; };
 /* End PBXBuildFile section */
@@ -106,6 +107,8 @@
 		E8564E261FBBD77E00F7E130 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E8713C931FD0FA080052A0D8 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 		E8713C971FD324170052A0D8 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		E8CE52E31FD4E4240051871A /* blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = blank.png; sourceTree = "<group>"; };
+		E8CE52EA1FD4EDD00051871A /* imgload.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = imgload.png; path = ../../imgload.png; sourceTree = "<group>"; };
 		E8E59C671FCE54DE00B7BFF4 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		E8EB4CC91FD0AB7100789DCC /* Map.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Map.swift; sourceTree = "<group>"; };
 		EA37BEA362F6C0477DCE5BD3 /* Pods-ethnik.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ethnik.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ethnik/Pods-ethnik.debug.xcconfig"; sourceTree = "<group>"; };
@@ -155,6 +158,7 @@
 		E813F7ED1F956BBA00049276 /* png */ = {
 			isa = PBXGroup;
 			children = (
+				E8CE52E31FD4E4240051871A /* blank.png */,
 				E813F7F11F959AE700049276 /* arrow small.png */,
 				E813F7F01F95984D00049276 /* iconmonstr-arrow-64-[Converted].png */,
 				E8175CAE1F946545009FCDC1 /* iconmonstr-magnifier-1-[Converted].png */,
@@ -167,6 +171,7 @@
 				E8175CBA1F94767C009FCDC1 /* jpn.png */,
 				E8175CB61F947465009FCDC1 /* it.png */,
 				E8175CBD1F9477BD009FCDC1 /* thai.png */,
+				E8CE52EA1FD4EDD00051871A /* imgload.png */,
 				E8175CBB1F9476ED009FCDC1 /* med.png */,
 				E8175CC01F947A92009FCDC1 /* ind.png */,
 				E8175CC21F947B9C009FCDC1 /* viet.png */,
@@ -390,6 +395,7 @@
 				E8175CC11F947AFA009FCDC1 /* ind.png in Resources */,
 				E813F7F91F95C6D400049276 /* jaffa.png in Resources */,
 				E8175CC81F94832C009FCDC1 /* launch.png in Resources */,
+				E8CE52EB1FD4EDD00051871A /* imgload.png in Resources */,
 				E8175CB71F94746B009FCDC1 /* it.png in Resources */,
 				E8175CC31F947BA4009FCDC1 /* viet.png in Resources */,
 				E813F7F51F959BEA00049276 /* magnifier-small.png in Resources */,
